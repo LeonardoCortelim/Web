@@ -2,6 +2,24 @@
 <html>
     <head>
         <title>Página 2 HTML básico</title>
+        <style>
+            img{
+                width: 400px;
+                border: 3px solid #ff0000; 
+                border-radius: 20%;
+                box-shadow: 0 0 10px red;                     }
+                img:hover{
+                    box-shadow: 0 0 10px chartreuse;                     }
+
+p{
+    color:#000000
+    
+}
+p{
+    background-color: rgb(255, 255, 255);
+    font-size: 15pt;
+}
+        </style>
     </head>
 
     <body>
@@ -35,11 +53,93 @@
 
         </div>
 
+        <h2>Lista de itens</h2>
+        <p>Esta é uma lista de itens não ordenada:</p>
         <ul>
+            <li>Carne</li>
+            <li>Linguiça</li>
+            <li>Frango</li>
+            <li>Calabresa</li>
+            <li>Pão de Alho</li>
+        </ul>
+        <p>Estas são listas ordenadas:</p>
+        <ol type="A" start="4">
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
-        </ul>
+        </ol>
+
+        <span>
+
+            Define uma lista de definição
+            <dl>
+                <dt>Café</dt>
+                <dd>Café bebida essencial a vida</dd>
+                <dt>Leite</dt>
+                <dd>Leite é uma bebida nutritiva</dd>
+                <dt>Cachaça</dt>
+                <dd>Cachaça é uma bebida</dd>
+            </dl>
+        </span>
+
+        <div>
+
+            <h2>Imagems</h2>
+            <img src="/Img/PZ.jpg" alt>
+
+        </div>
+
+        <div>
+
+<h2>Tabelas no HTML</h2>
+<table>
+<tr>
+
+<td>Item</td>
+<td>Descrição</td>
+<td>Quantidade</td>
+<td>Preço</td>
+
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>Carne</td>
+    <td>1kg</td>
+    <td>R$ 40,00</td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Linguiça</td>
+    <td>1kg</td>
+    <td>R$ 44,00</td>
+</tr>
+
+
+<tr>
+    <td>3</td>
+    <td>Frango</td>
+    <td>1kg</td>
+    <td>R$ 20</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Calabresa</td>
+    <td>1kg</td>
+    <td>R$ 30,00</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>Pão de alho</td>
+    <td>1kg</td>
+    <td>R$ 10,00</td>
+</tr>
+
+
+</table>
+
+        </div>
 
     </body>
 
