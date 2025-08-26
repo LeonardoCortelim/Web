@@ -7,7 +7,7 @@ Tipos de Seletor Existentes:
 -Seletor de Tipo: Selecine todos os elementos de um determinado tipo(ex: p,h1,div)
 -Seletor de Classe::seleciona um único elemento com determinado ID (ex: #meu-id)
 -Seletor de Classe:Seleciona todos os elementos com uma determinada classe (ex: .minha-classe)
--Seletor de Atributo: Seleciona Elementos com um deter
+-Seletor de Atributo: Seleciona Elementos com um determinado Atributo (ex: 
 **/
 *{
 margin: 0;
@@ -33,5 +33,15 @@ font-size: 20pt;
 }
 
 [for="nome"], [type="submit"]{
-    color: rgb(255, 0, 0);
+    color: magenta;
+}
+
+p:hover{
+    background-color: magenta;
+    color: white;
+    font-size: 22;
+}
+#botao2[type="submit"]:hover{
+    color: red;
+    font-size: 22pt;
 }
