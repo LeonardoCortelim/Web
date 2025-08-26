@@ -1,0 +1,37 @@
+/**Uma regra Css tem sintaxe geral
+seletor{
+propiedades:valor;
+}
+
+Tipos de Seletor Existentes:
+-Seletor de Tipo: Selecine todos os elementos de um determinado tipo(ex: p,h1,div)
+-Seletor de Classe::seleciona um único elemento com determinado ID (ex: #meu-id)
+-Seletor de Classe:Seleciona todos os elementos com uma determinada classe (ex: .minha-classe)
+-Seletor de Atributo: Seleciona Elementos com um deter
+**/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/**border: 1px solid red;**/
+}
+
+body,p,div{
+   background-color: rgb(red, green, blue);
+}
+
+p{
+    color: red;
+    background-color: aqua;
+}
+#descricao-css{
+    font-weight: bold;
+}
+
+.titulo{
+font-size: 20pt;
+}
+
+[for="nome"], [type="submit"]{
+    color: rgb(255, 0, 0);
+}
