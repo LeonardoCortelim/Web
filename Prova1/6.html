@@ -1,40 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-    html,body{margin:0px;padding: 0px;}
-   .box{
-    display: inline-block;
-    height: 20vw;
-    width: 20vw;
-    border: 1px solid black;
-    border-radius: 50%;
+<head>
+  <meta charset="UTF-8">
+  <title>Bandeiras</title>
+  <style>
+    .bandeira {
+      width: 1400px;
+      height: 1000px;
+      border: 1px solid black;
+      margin: 10px;
+      display: inline-block;
+    }
 
-   }
-
-#item5{background-color: rgb(255, 0, 0);
-}
-
-#item5{position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-
-
-</style>
-    </head>
-    <body>
-        <div class="container">
-            <div id="item5" class="box">5</div>
-        </div>
-        
-        <div></div>
-
-
-
-    </body>
+    .japao {
+      background: white;
+      position: relative;
+    }
+    .japao::before {
+      content: "";
+      position: absolute;
+      top: 150px;
+      left: 360px;
+      width: 700px;
+      height: 650px;
+      background: red;
+      border-radius: 50%;
+    }
+    
+    .italia {
+      background: linear-gradient(to right, green 33%, white 33% 66%, red 66%);
+    }
+    
+    .franca {
+      background: linear-gradient(to right, blue 33%, white 33% 66%, red 66%);
+    }
+  </style>
+</head>
+<body>
+  <div class="bandeira japao"></div>
+  <div class="bandeira italia"></div>
+  <div class="bandeira franca"></div>
+</body>
 </html>
