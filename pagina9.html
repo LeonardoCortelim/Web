@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
-<title>Java Script</title>
-
-
-
 <body>
+    
     <script>
-        //Codigo JS
-       // alert("Olá mundão perdido")
+        // Código JS
+        // alert("Olá mundo!")
 
-        var i=0
+        var i = 0;
         console.log(i)
         console.log(typeof(i))
-        i="Leonardo"
+        i="Romulo"
         console.log(i)
         console.log(typeof(i))
         document.body.style.backgroundColor="lightgray"
 
+        button=document.createElement("button")
+        button.id="btn"
+        button.innerText="Entrar"
+
+        document.body.appendChild(button)
+
+        document.body.style.height="100vh"
+        document.body.style.display="flex"
+        document.body.style.justifyContent="center"
+        document.body.style.alignItems="center"
+        addEventListener
+        button.addEventListener("click", () => {
+            alert("Você clicou no botão")
+        })
 
     </script>
-    
 </body>
 </html>
