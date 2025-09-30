@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Curso JavaScript Progressivo</title>
+
+   <script>
+    let numero = prompt("Digite um número: ")
+
+    console.log(typeof(numero))
+    numero = parseInt(numero)
+
+    for(let i=0;i<numero;i++){
+        let p = document.createElement("p")
+        p.innerText=(i+12)
+        p.style.border="1px solid black"
+        document.body.appendChild(p)
+    }
+    
+   </script>
+
+ </head>
+</html>
