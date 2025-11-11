@@ -18,9 +18,29 @@
     <h2>Exemplo tipo de dados</h2>
 
 <?php
-    $a=5
-    $=7
+    $a=5;
+    $b=7;
     echo "<p>".$a+$b."</p>";
+
+    ?>
+
+    <h2>Operador ternario</h2>
+
+<?php
+    $nota=3;
+    $situacao = $nota >=6 ? "aprovado" : "reprovado";
+    echo $situacao;
+?>
+
+<h2>While</h2>
+
+<?php
+    $i =0;
+    while($i<50){
+        $i++;
+        echo "i=".$i. "-";
+    }
+
 
 ?>
 
