@@ -62,14 +62,39 @@
         echo 'CPF: ' . $vetor['cpf'];
     ?>
 
-    <H2>Variaveis de ambiente em PHP</H2>
+    <h2>Variáveis de ambiente em PHP</h2>
 
     <?php
-        echo "$GET".$_GET[nome];
-        echo "SERVER:" . var_dump ($_SERVER);
+        // Corrigido: $_GET estava com erro de sintaxe
+        if (isset($_GET['nome'])) {
+            echo "GET[nome]: " . $_GET['nome'] . "<br>";
+        }
 
+        echo "<h3>SERVER:</h3>";
+        echo "<pre>";
+        var_dump($_SERVER); // exibe informações do servidor
+        echo "</pre>";
     ?>
 
+    <h2>Formulário - Soma de A + B</h2>
 
+    <!-- Corrigido: falta de = nos atributos name e pequenos erros de id -->
+    <form action="" method="get">
+        <label for="inputA">A:</label>
+        <input type="number" id="inputA" name="a" required>
+
+        <label for="inputB">B:</label>
+        <input type="number" id="inputB" name="b" required>
+
+        <input type="submit" value="Somar">
+    </form>
+
+    <?php 
+        // Só exibe o resultado se os campos forem passados via GET
+        if (isset($_GET['a']) && isset($_GET['b'])) {
+            $soma = $_GET['a'] + $_GET['b'];
+            echo "<p><strong>Soma = $soma</strong></p>";
+        }
+    ?>
 </body>
 </html>
