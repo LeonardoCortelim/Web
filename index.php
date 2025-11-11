@@ -8,7 +8,10 @@
 <body>
     Minha pagina html
     <?php
-        echo "Olá Mundão perdido!";
+        echo "<BR>"."Olá Mundão perdido!<BR>";
+        $nome="Leonardo Cortelim<BR>";
+        echo $nome."<BR>"; 
+        
     ?>
 
 </body>
