@@ -11,8 +11,21 @@
         echo "<BR>"."Olá Mundão perdido!<BR>";
         $nome="Leonardo Cortelim<BR>";
         echo $nome."<BR>"; 
+
         
     ?>
+
+    <h2>Exemplo tipo de dados</h2>
+
+<?php
+    $a=5
+    $=7
+    echo "<p>".$a+$b."</p>";
+
+?>
+
+
+
 
 </body>
 </html>
