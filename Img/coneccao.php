@@ -54,10 +54,10 @@
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    function get_usuario($id){
+    function get_usuario(){
         $con=conecta_bd();
         $stmt=$con->prepare("SELECT * FROM usuarios");
         $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 ?>
