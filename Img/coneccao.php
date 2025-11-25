@@ -45,6 +45,13 @@
         stmt -> bindParam(':login', $login);
         stmt -> bindParam(':senha', $senha);
         return $stmt->execute();
-
     }
+    funcion get_usuario($id){
+        $con=conecta_bd();
+        $stmt=$con->prepare("SELECT * FROM usuarios WHERE id = :id");
+        $stmt->bindParam(':id',$id);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
 ?>
