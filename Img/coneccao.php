@@ -39,5 +39,12 @@
     
     function update_usuario($id, $nome, $login, $senha){
         $con = connecta_db();
+        $stmt=$con->prepare("UPDATE usuarios SET nome = :nome, login,senha = :senha WHERE id= :id");
+        stmt -> bindParam(':id', $id);
+        stmt -> bindParam(':nome', $nome);
+        stmt -> bindParam(':login', $login);
+        stmt -> bindParam(':senha', $senha);
+        return $stmt->execute();
+
     }
 ?>
