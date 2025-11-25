@@ -34,5 +34,10 @@
         $stmt->bindParam('id',$id);
         return $stmt->execute();
     }
+    //for($i=1,$i<=10;$i++)
+    //delete_usuario($i);
     
+    function update_usuario($id, $nome, $login, $senha){
+        $con = connecta_db();
+    }
 ?>
